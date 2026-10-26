@@ -1,0 +1,1237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zero Design Studio — Multimedia Portfolio</title>
+<meta name="description" content="Zero Design Studio — multidimensional experience design agency in India, UAE and Saudi Arabia. Stage and screen content, exhibitions, anamorphic content, projection mapping and multimedia shows.">
+<meta property="og:title" content="Zero Design Studio — Multimedia Portfolio">
+<meta property="og:description" content="Zero Design Studio — multidimensional experience design agency in India, UAE and Saudi Arabia. Stage and screen content, exhibitions, anamorphic content, projection mapping and multimedia shows.">
+<meta property="og:image" content="images/sbi-life-25-years.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/zds-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&amp;family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap">
+<style>
+@font-face{font-family:'Lato';src:url(fonts/Lato-Bold.woff2) format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Lato';src:url(fonts/Lato-Black.woff2) format('woff2');font-weight:900;font-style:normal;font-display:swap}
+.zds h2,.zds h3{font-family:'Lato',system-ui,sans-serif;letter-spacing:0}
+body{margin:0;background:#07060C}
+a{color:#E3B6FF}a:hover{color:#ffffff}
+.zds *{box-sizing:border-box}
+.zds{font-family:'Barlow',system-ui,sans-serif;color:#F3EFFA;background:#07060C}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.disp{font-family:'Orbitron',sans-serif;letter-spacing:.02em}
+.outline{color:transparent;-webkit-text-stroke:1.5px #C99BFF}
+.navlinks{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.heroimg{width:100%;aspect-ratio:2/1;object-fit:cover;display:block;border-radius:14px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#2A2238;border:1px solid #2A2238;border-radius:14px;overflow:hidden}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.card img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block;transition:transform .5s ease}
+.card:hover img{transform:scale(1.04)}
+.idx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none}
+.dd{position:relative}
+.dd .menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:18px;z-index:20}
+.dd:hover .menu,.dd:focus-within .menu{display:block}
+.dd .panel{width:600px;padding:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:#110D1B;border:1px solid #3A2F4E;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.dd .mi{display:flex;align-items:center;gap:12px;min-height:44px;padding:0 12px;border-radius:10px;color:#E6DFF2;text-decoration:none;font-size:15px;font-weight:500}
+.dd .mi:hover,.dd .mi:focus{background:#2A1D40;color:#ffffff;outline:none}
+.dd:hover .chev{transform:rotate(180deg)}
+.chev{transition:transform .2s ease}
+.svc-item{scroll-margin-top:110px;transition:background .3s ease,box-shadow .3s ease}
+.svc-item:hover{background:#130F1F !important}
+.svc-item:target{background:#1E1430 !important;box-shadow:inset 0 0 0 2px #C23BFF}
+.anchor{scroll-margin-top:96px}
+.watch{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-weight:600;font-size:15px;text-decoration:none}
+@media (max-width:900px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.idx{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:minmax(0,1fr);gap:24px}}
+@media (max-width:640px){.wrap{padding:0 16px}.stats,.cards,.svc,.idx{grid-template-columns:minmax(0,1fr)}.navlinks .hide-sm{display:none}.hero-h{font-size:40px !important}.sec-h{font-size:30px !important}}
+.tab{min-height:44px;padding:0 18px;border-radius:999px;font:600 15px 'Barlow',sans-serif;cursor:pointer;background:transparent;color:#F3EFFA;border:1px solid #4A3D60}
+.tab[aria-pressed="true"]{background:#C23BFF;color:#0B0712;border-color:#C23BFF}
+.row[hidden]{display:none !important}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div class="zds" style="width: 100%; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(7,6,12,0.88); backdrop-filter: blur(10px); border-bottom: 1px solid #1C1727">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 72px">
+<a href="#top" aria-label="Zero Design Studio home" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<img src="images/zds-logo.png" alt="Zero Design Studio" style="height: 48px; width: auto; display: block">
+</a>
+<nav class="navlinks" aria-label="Sections">
+<a class="hide-sm" href="#reels" style="color: #D9D2E6; text-decoration: none; font-weight: 500">Showreels</a>
+<a class="hide-sm" href="#work" style="color: #D9D2E6; text-decoration: none; font-weight: 500">Work</a>
+<div class="dd hide-sm">
+<a href="#services" aria-haspopup="true" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #D9D2E6; text-decoration: none; font-weight: 500">Services
+<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a>
+<div class="menu">
+<nav class="panel" aria-label="All services">
+<a class="mi" href="#work-events"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">01</span>Stage &amp; exhibition content</a>
+<a class="mi" href="#work-experiential"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">02</span>Anamorphic content</a>
+<a class="mi" href="#work-events"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">03</span>Show visual packaging</a>
+<a class="mi" href="#work-experiential"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">04</span>Interactive content</a>
+<a class="mi" href="#work-experiential"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">05</span>Immersive experiences</a>
+<a class="mi" href="#work-exhibitions"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">06</span>CGI &amp; VFX</a>
+<a class="mi" href="#work-exhibitions"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">07</span>Experience centres</a>
+<a class="mi" href="#work-projection"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">08</span>Light &amp; sound shows</a>
+<a class="mi" href="#work-projection"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">09</span>Projection mapping</a>
+<a class="mi" href="#work-events"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">10</span>Stage design &amp; content delivery</a>
+<a class="mi" href="#work-events"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">11</span>Content strategy &amp; development</a>
+<a class="mi" href="#work-exhibitions"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">12</span>Spatial design &amp; conceptualisation</a>
+<a class="mi" href="#work-experiential"><span class="disp" style="font-size: 11px; font-weight: 700; color: #C23BFF">13</span>Multimedia show production</a>
+</nav>
+</div>
+</div>
+<a class="hide-sm" href="#all" style="color: #D9D2E6; text-decoration: none; font-weight: 500">All projects</a>
+<a class="btn" href="#contact" style="background: #C23BFF; color: #0B0712; min-height: 44px; padding: 0 20px; font-size: 15px">Start a project</a>
+</nav>
+</div>
+</header>
+<section id="top" style="position: relative; padding: 96px 0 72px">
+<div aria-hidden="true" style="position: absolute; top: -160px; left: 50%; transform: translateX(-50%); width: 900px; height: 520px; border-radius: 50%; background: #C23BFF; opacity: 0.22; filter: blur(140px); pointer-events: none"></div>
+<div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 28px; align-items: center; text-align: center">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #C9B8E6">Multimedia portfolio · India · UAE · Saudi</p>
+<h1 class="disp hero-h" style="margin: 0; font-size: 76px; line-height: 1.05; font-weight: 900">ENGAGE. <span class="outline">ENTERTAIN.</span> EVOLVE.</h1>
+<p style="margin: 0; max-width: 680px; font-size: 21px; line-height: 1.5; color: #CFC7DD">We're a multidimensional experience design agency creating immersive, interactive and bold storytelling experiences for stages, exhibitions and public spaces worldwide.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center">
+<a class="btn" href="#work" style="background: #C23BFF; color: #0B0712">See the work
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
+<a class="btn" href="#contact" style="border: 1px solid #4A3D60; color: #F3EFFA">Talk to us</a>
+</div>
+<div style="width: 100%; margin-top: 24px; padding: 1px; border-radius: 15px; background: linear-gradient(120deg, #5B3BFF, #C23BFF, #2A2238)">
+<img class="heroimg" src="images/sbi-life-25-years.jpg" alt="Stage visuals for SBI Life 25 Years, 2026">
+</div>
+<p style="margin: 0; font-size: 14px; color: #A79FB8">Above: SBI Life 25 Years, 2026 — full stage visual package</p>
+</div>
+</section>
+<section style="padding: 0 0 72px">
+<div class="wrap">
+<div class="stats">
+<div style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
+<div class="disp" style="font-size: 44px; font-weight: 700; color: #C23BFF">70+</div>
+<div style="margin-top: 6px; font-size: 17px; color: #CFC7DD">projects in this portfolio, from brand stages to temple facades</div>
+</div>
+<div style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
+<div class="disp" style="font-size: 44px; font-weight: 700; color: #C23BFF">3</div>
+<div style="margin-top: 6px; font-size: 17px; color: #CFC7DD">home markets — India, UAE and Saudi Arabia — with work delivered in the USA, Nepal and Malaysia</div>
+</div>
+<div style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
+<div class="disp" style="font-size: 44px; font-weight: 700; color: #C23BFF">13</div>
+<div style="margin-top: 6px; font-size: 17px; color: #CFC7DD">services under one roof, from concept and CGI to projection mapping and show production</div>
+</div>
+</div>
+</div>
+</section>
+<section id="reels" style="padding: 0 0 88px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #C23BFF">Start here</p>
+<h2 class="disp sec-h" style="margin: 0; font-size: 40px; font-weight: 700">Watch the showreels</h2>
+</div>
+<div class="cards">
+<a href="https://youtu.be/wWdHbHcyybs" target="_blank" rel="noopener" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 240px; padding: 32px; border-radius: 16px; text-decoration: none; color: #F3EFFA; background: radial-gradient(120% 140% at 0% 0%, #3A1A5C 0%, #120E1C 60%); border: 1px solid #4A3D60">
+<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span class="disp" style="font-size: 24px; font-weight: 700">Zero Design Studio Showreel</span>
+<span style="font-size: 16px; color: #CFC7DD">Our best stage, exhibition and experiential work in one cut</span>
+</div>
+</a>
+<a href="https://youtu.be/oAEomBEkBLg" target="_blank" rel="noopener" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 240px; padding: 32px; border-radius: 16px; text-decoration: none; color: #F3EFFA; background: radial-gradient(120% 140% at 100% 0%, #1E1F66 0%, #120E1C 60%); border: 1px solid #4A3D60">
+<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span class="disp" style="font-size: 24px; font-weight: 700">ZDS AI Showreel</span>
+<span style="font-size: 16px; color: #CFC7DD">Content made with AI-driven production</span>
+</div>
+</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; margin-top: 16px">
+<h3 class="disp" style="margin: 0; font-size: 20px; font-weight: 700">Capability decks</h3>
+<div class="cards" style="gap: 12px">
+<a href="https://docs.google.com/presentation/d/1Hme3rVUFa8pJaz7PSuig4BPoxO9jWs9M/edit?usp=sharing" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 0 22px; border: 1px solid #2A2238; border-radius: 12px; background: #0E0B16; text-decoration: none; color: #F3EFFA">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 600">Exhibitions &amp; Stage Content</span><span style="font-size: 13px; color: #A79FB8">Presentation</span></span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+</a>
+<a href="https://drive.google.com/file/d/1EDn5SmrDNtmduVJ_dG63J-rVmYZRvF1t/view" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 0 22px; border: 1px solid #2A2238; border-radius: 12px; background: #0E0B16; text-decoration: none; color: #F3EFFA">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 600">Retail Experiential Marketing</span><span style="font-size: 13px; color: #A79FB8">PDF deck</span></span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+</a>
+<a href="https://drive.google.com/file/d/1hyeb6HLrOZnrcEfzbPe6LSWCYzJtwVoI/view" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 0 22px; border: 1px solid #2A2238; border-radius: 12px; background: #0E0B16; text-decoration: none; color: #F3EFFA">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 600">DOOH Marketing</span><span style="font-size: 13px; color: #A79FB8">PDF deck</span></span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+</a>
+<a href="https://drive.google.com/file/d/1tHN5B9luYOz2JdZfHUAbrSaWBqcQ4Cl4/view" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 0 22px; border: 1px solid #2A2238; border-radius: 12px; background: #0E0B16; text-decoration: none; color: #F3EFFA">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 600">Anamorphic Deck</span><span style="font-size: 13px; color: #A79FB8">PDF deck</span></span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Brands we've worked with" style="padding: 40px 0; border-top: 1px solid #1C1727; border-bottom: 1px solid #1C1727; background: #0A0811">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 20px; align-items: center">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #A79FB8">Brands we've built for</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 34px">
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">SBI LIFE</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">JSW</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">BLUESTAR</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">BPCL</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">INFOSYS</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">STANDARD CHARTERED</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">NPCI</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">UNION BANK</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">VIVO</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">YOUTUBE</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">KRAFTON</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">WWE</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">DHL</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">TVS</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">HERO</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">ASHOK LEYLAND</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">FOOT LOCKER</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">PUNJAB KINGS</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">TIMES NOW</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">OPENTEXT</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">HORIBA</span>
+<span class="disp" style="font-size: 15px; font-weight: 500; color: #DCD3EA; letter-spacing: 0.08em">WAAREE</span>
+</div>
+</div>
+</section>
+<section style="padding: 104px 0">
+<div class="wrap two">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #C23BFF">Vision &amp; mission</p>
+<h2 class="disp sec-h" style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">To push the boundaries of experience design and transform how the world engages with stories.</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding-top: 8px">
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #CFC7DD">Every brief starts with the room: who's in it, what they should feel, and the one moment they'll talk about afterwards. We design the content, the space and the show around that moment, then build it on LED, holograms, anamorphic screens and projection.</p>
+<div>
+<p style="margin: 0 0 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #A79FB8">What drives us</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<span style="padding: 10px 18px; border: 1px solid #4A3D60; border-radius: 999px; font-weight: 600">Boldness</span>
+<span style="padding: 10px 18px; border: 1px solid #4A3D60; border-radius: 999px; font-weight: 600">Creativity</span>
+<span style="padding: 10px 18px; border: 1px solid #4A3D60; border-radius: 999px; font-weight: 600">Innovation</span>
+<span style="padding: 10px 18px; border: 1px solid #4A3D60; border-radius: 999px; font-weight: 600">Immersion</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="services" style="padding: 0 0 104px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #C23BFF">Services</p>
+<h2 class="disp sec-h" style="margin: 0; font-size: 40px; font-weight: 700">One studio, idea to opening night</h2>
+</div>
+<div class="svc">
+<div id="svc-01" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">01</span>
+<span style="font-size: 18px; font-weight: 600">Stage &amp; exhibition content</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Screen content for stages, booths and venue LED, built to the exact pixel map.</p>
+<a href="#work-events" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-02" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">02</span>
+<span style="font-size: 18px; font-weight: 600">Anamorphic content</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">3D illusions for corner LED and DOOH screens that seem to break out of the frame.</p>
+<a href="#work-experiential" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-03" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">03</span>
+<span style="font-size: 18px; font-weight: 600">Show visual packaging</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">One visual identity across the stage, screens, walk-ins, stingers and on-screen graphics.</p>
+<a href="#work-events" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-04" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">04</span>
+<span style="font-size: 18px; font-weight: 600">Interactive content</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Touch, motion and gesture-driven content that responds to the audience.</p>
+<a href="#work-experiential" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-05" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">05</span>
+<span style="font-size: 18px; font-weight: 600">Immersive experiences</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Rooms and installations that surround visitors with the story.</p>
+<a href="#work-experiential" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-06" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">06</span>
+<span style="font-size: 18px; font-weight: 600">CGI &amp; VFX</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Photoreal 3D, product renders and visual effects for launches and films.</p>
+<a href="#work-exhibitions" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-07" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">07</span>
+<span style="font-size: 18px; font-weight: 600">Experience centres</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Permanent brand and visitor centres built around multimedia storytelling.</p>
+<a href="#work-exhibitions" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-08" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">08</span>
+<span style="font-size: 18px; font-weight: 600">Light &amp; sound shows</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Lighting, audio and visuals synchronised for monuments and public spaces.</p>
+<a href="#work-projection" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-09" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">09</span>
+<span style="font-size: 18px; font-weight: 600">Projection mapping</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Video mapped onto temples, buildings and objects.</p>
+<a href="#work-projection" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-10" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">10</span>
+<span style="font-size: 18px; font-weight: 600">Stage design &amp; content delivery</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">From concept to final render: stage design, screen content and on-site playback support.</p>
+<a href="#work-events" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-11" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">11</span>
+<span style="font-size: 18px; font-weight: 600">Content strategy &amp; development</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Concepts, scripts and storyboards that shape the experience before it is built.</p>
+<a href="#work-events" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-12" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">12</span>
+<span style="font-size: 18px; font-weight: 600">Spatial design &amp; conceptualisation</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">Stage, booth and venue layouts designed around the audience journey.</p>
+<a href="#work-exhibitions" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div id="svc-13" class="svc-item" style="padding: 26px 24px; background: #0B0912; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span class="disp" style="font-size: 13px; color: #C23BFF; font-weight: 700">13</span>
+<span style="font-size: 18px; font-weight: 600">Multimedia show production</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A79FB8">End-to-end production of shows that combine video, light, sound and live elements.</p>
+<a href="#work-experiential" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
+</div>
+<div style="padding: 26px 24px; background: #0B0912; display: flex; align-items: center">
+<a href="#contact" style="font-weight: 600; text-decoration: none; color: #C23BFF">Not sure what you need? Ask us →</a>
+</div>
+<div style="padding: 26px 24px; background: #0B0912"></div>
+</div>
+</div>
+</section>
+<section id="work" style="padding: 0 0 40px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #C23BFF">Work showcase</p>
+<h2 class="disp sec-h" style="margin: 0; font-size: 40px; font-weight: 700">Selected work</h2>
+<p style="margin: 0; max-width: 640px; font-size: 18px; color: #CFC7DD">Tap any project to watch the walkthrough.</p>
+</div>
+<div id="work-events" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
+<h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Stage &amp; Screen Content</h3>
+<span style="font-size: 16px; color: #A79FB8">Stage visuals for brand shows, launches and concerts</span>
+</div>
+<div class="cards">
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/sbi-life-25-years.jpg" alt="SBI Life — 25 Years — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">SBI Life — 25 Years</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2026</span>
+</div>
+<a class="watch" href="https://youtu.be/qRhDoW0u8Ag" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch SBI Life — 25 Years">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/jsw-cement.jpg" alt="JSW Cement — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">JSW Cement</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2026</span>
+</div>
+<a class="watch" href="https://youtu.be/_duMYKPJPgM" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch JSW Cement">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/bluestar.jpg" alt="Bluestar — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Bluestar</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2026</span>
+</div>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/karur-vysya-bank.jpg" alt="Karur Vysya Bank — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Karur Vysya Bank</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2026</span>
+</div>
+<a class="watch" href="https://youtu.be/Y3hIOXfJdj0" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Karur Vysya Bank">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/sbi-life-sangam.jpg" alt="SBI Life Sangam — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">SBI Life Sangam</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2025</span>
+</div>
+<a class="watch" href="https://youtu.be/82TEhofDzNU" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch SBI Life Sangam">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/abg-awards.jpg" alt="ABG Awards — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">ABG Awards</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2025</span>
+</div>
+<a class="watch" href="https://youtu.be/QOpNdhEXKzs" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch ABG Awards">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/elie-saab-m3m.jpg" alt="Elie Saab × M3M — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Elie Saab × M3M</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://youtu.be/gyf2Ls0ZzBY" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Elie Saab × M3M">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/bharat-smriti-bodh.jpg" alt="Bharat Smriti Bodh — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Bharat Smriti Bodh</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/krafton-awards.jpg" alt="Krafton Awards India — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Krafton Awards India</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DUBC_AtiKzU/" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Krafton Awards India">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/youtube-fanfest.jpg" alt="YouTube FanFest — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">YouTube FanFest</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2025</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DPOs4iWiZnI/" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch YouTube FanFest">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/nucleya-lollapalooza.jpg" alt="Nucleya × Lollapalooza — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Nucleya × Lollapalooza</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2026</span>
+</div>
+<a class="watch" href="https://youtube.com/shorts/hgEfU2zQFK8" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Nucleya × Lollapalooza">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/waves-summit.jpg" alt="WAVES — World Audio Visual &amp; Entertainment Summit — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">WAVES — World Audio Visual &amp; Entertainment Summit</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://youtube.com/shorts/5RXspf-cMBA" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch WAVES — World Audio Visual &amp; Entertainment Summit">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/khelo-india.jpg" alt="Khelo India — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Khelo India</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://youtu.be/2i-jYfBuDEE" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Khelo India">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/india-energy-week.jpg" alt="India Energy Week — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">India Energy Week</span>
+<span style="font-size: 14px; color: #A79FB8">India · 2025</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=0SAY6r9sS4g" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch India Energy Week">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+</div>
+</div>
+<div id="work-exhibitions" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
+<h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Exhibitions</h3>
+<span style="font-size: 16px; color: #A79FB8">Booth content for expos and trade shows</span>
+</div>
+<div class="cards">
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/opentext-leap.jpg" alt="OpenText @ LEAP 2025 — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">OpenText @ LEAP 2025</span>
+<span style="font-size: 14px; color: #A79FB8">Riyadh</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1NPhOGoSjJ_yf3i6Sx38Bm5OgDFWNtRvh/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch OpenText @ LEAP 2025">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/ezelink-gitex.jpg" alt="Ezelink @ GITEX 2024 — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Ezelink @ GITEX 2024</span>
+<span style="font-size: 14px; color: #A79FB8">Dubai</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1rLtf9Wvp0vHl05TrfR0QDiTuNXPc5LUe/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Ezelink @ GITEX 2024">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/ashok-leyland.jpg" alt="Ashok Leyland @ Auto Expo — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Ashok Leyland @ Auto Expo</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://youtu.be/ERanxf-xjso" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Ashok Leyland @ Auto Expo">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/axis-anamorphic.jpg" alt="Axis Bank — anamorphic content — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Axis Bank — anamorphic content</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1jwal_omHLw4st70E1S6K3CBq2qoN5Cwe/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Axis Bank — anamorphic content">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+</div>
+</div>
+<div id="work-experiential" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
+<h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Multimedia Shows &amp; Experiential</h3>
+<span style="font-size: 16px; color: #A79FB8">Anamorphic, holographic and immersive installs</span>
+</div>
+<div class="cards">
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/blvd-sphere.jpg" alt="BLVD Sphere — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">BLVD Sphere</span>
+<span style="font-size: 14px; color: #A79FB8">Riyadh</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1R8gEjZxjZFeIL1NuDIM5za5JcCYL2m5W/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch BLVD Sphere">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/foot-locker-anamorphic.jpg" alt="Foot Locker anamorphic — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Foot Locker anamorphic</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1PB-ObZfWvFKzb6dv1aPCuoaiz4_AsgVP/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Foot Locker anamorphic">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/punjab-kings-anamorphic.jpg" alt="Punjab Kings anamorphic — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Punjab Kings anamorphic</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1QDdqlkdXfs7vqRhCkOHe-CKucw9dR7gv/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Punjab Kings anamorphic">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/ipl-holographic.jpg" alt="IPL holographic installation — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">IPL holographic installation</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://drive.google.com/drive/folders/1gJGX90vY3Ptr-Qm0c_x_VnqQ24VRNIXE" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch IPL holographic installation">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+</div>
+</div>
+<div id="work-projection" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
+<h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Projection Mapping</h3>
+<span style="font-size: 16px; color: #A79FB8">Temples, monuments and building facades</span>
+</div>
+<div class="cards">
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/hanuman-temple-projection.jpg" alt="Hanuman Temple — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Hanuman Temple</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1-xMd5aWLPzGcXMAMepBZ7fvNC0Wc2XfJ/view" target="_blank" rel="noopener" style="color: #C23BFF" aria-label="Watch Hanuman Temple">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+</article>
+<article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
+<div style="overflow: hidden"><img src="images/ayodhya-gateway-projection.jpg" alt="Ayodhya Temple &amp; Gateway of India — visuals by Zero Design Studio" loading="lazy"></div>
+<div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 18px; font-weight: 600">Ayodhya Temple &amp; Gateway of India</span>
+<span style="font-size: 14px; color: #A79FB8">India</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="all" style="padding: 32px 0 104px; background: #0A0811; border-top: 1px solid #1C1727">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px; padding-top: 64px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #C23BFF">The full list</p>
+<h2 class="disp sec-h" style="margin: 0; font-size: 40px; font-weight: 700">Every project in the portfolio</h2>
+</div>
+<div class="tabs" role="group" aria-label="Filter projects">
+<button type="button" class="tab" data-cat="all" aria-pressed="true">All <span style="opacity: 0.7">72</span></button>
+<button type="button" class="tab" data-cat="events" aria-pressed="false">Stage visuals <span style="opacity: 0.7">46</span></button>
+<button type="button" class="tab" data-cat="exhibitions" aria-pressed="false">Exhibitions <span style="opacity: 0.7">11</span></button>
+<button type="button" class="tab" data-cat="experiential" aria-pressed="false">Experiential <span style="opacity: 0.7">10</span></button>
+<button type="button" class="tab" data-cat="projection" aria-pressed="false">Projection mapping <span style="opacity: 0.7">5</span></button>
+</div>
+<div class="idx">
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">SBI Life — 25 Years 2026</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/qRhDoW0u8Ag" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch SBI Life — 25 Years 2026">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">JSW Cement 2026</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/_duMYKPJPgM" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch JSW Cement 2026">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Bluestar 2026</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Karur Vysya Bank 2026</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/Y3hIOXfJdj0" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Karur Vysya Bank 2026">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Dhurandhar 2 album launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtube.com/shorts/6eYxs3qFKDQ" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Dhurandhar 2 album launch">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Bharat Smriti Bodh</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">BPCL</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">SBI Life Sangam 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/82TEhofDzNU" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch SBI Life Sangam 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">ABG Awards 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/QOpNdhEXKzs" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch ABG Awards 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Krishna musical</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Elie Saab × M3M</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/gyf2Ls0ZzBY" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Elie Saab × M3M">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Horiba 2026</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Dubai</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">WOW Awards 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Dubai</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DPdPYiej_3g/" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch WOW Awards 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Danube launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Dubai</span>
+</div>
+<a class="watch" href="https://youtu.be/Wk7giZklzG8" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Danube launch">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Ilaiyaraaja musical</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DPl5OjECGVh/" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Ilaiyaraaja musical">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Krafton Awards India</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DUBC_AtiKzU/" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Krafton Awards India">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">YouTube FanFest 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DPOs4iWiZnI/" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch YouTube FanFest 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Idli Kadai audio launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Vivo X300 launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/cQ2Kpcudj1Q" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Vivo X300 launch">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Nucleya × Lollapalooza 2026</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtube.com/shorts/hgEfU2zQFK8" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Nucleya × Lollapalooza 2026">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Asia Cup Hockey 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Kokilaben</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Vivo V60 launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DOOS-uMiPAW/" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Vivo V60 launch">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Al-Ain University</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Dubai</span>
+</div>
+<a class="watch" href="https://youtu.be/vuwFmSOSqDw" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Al-Ain University">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Cvent Conference</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Dubai</span>
+</div>
+<a class="watch" href="https://youtu.be/N1Uh3D9nnC0" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Cvent Conference">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">WAVES Summit</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtube.com/shorts/5RXspf-cMBA" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch WAVES Summit">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Khelo India</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/2i-jYfBuDEE" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Khelo India">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Renewable Energy Invest 2024</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1cgwHyVN8E0DGTxxD4Vm3lvzaNFd8livW/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Renewable Energy Invest 2024">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Times Now Summit 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/xLfPjFJC_74" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Times Now Summit 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Utkarsh 2025 gala</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=EqJ4wIsk6M4" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Utkarsh 2025 gala">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">India Energy Week 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=0SAY6r9sS4g" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch India Energy Week 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Times India Economic Conclave</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=0SAY6r9sS4g" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Times India Economic Conclave">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Hero @ Auto Expo</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/WzAGUIeZtx8" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Hero @ Auto Expo">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Horiba — One Team One Dream</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Marico Innovation Foundation</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">BHIM 3.0, NPCI</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Standard Chartered</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=R9YMLNm0siw" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Standard Chartered">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Bajaj Allianz</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Nepal</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Union Bank of India</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=qNSJdnukxso" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Union Bank of India">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">NPCI — One Team One Dream</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">WOW Awards Asia 2024</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Asia</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">TAFE product launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://youtu.be/c93fcxrOIV8" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch TAFE product launch">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Infosys Americas Confluence</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · USA</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Bluestar product launch</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=qamMNbS9hWA" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Bluestar product launch">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">LED visuals (homelooks)</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · India</span>
+</div>
+</div>
+<div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Harris Jayaraj concert</span>
+<span style="font-size: 13px; color: #A79FB8">Stage visuals · Malaysia</span>
+</div>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">OpenText @ LEAP 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · Riyadh</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1NPhOGoSjJ_yf3i6Sx38Bm5OgDFWNtRvh/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch OpenText @ LEAP 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Ezelink @ GITEX 2024</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · Dubai</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1rLtf9Wvp0vHl05TrfR0QDiTuNXPc5LUe/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Ezelink @ GITEX 2024">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">MESC</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · Dubai</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1bVmi0YLoemNCP4_HXRnLHaHYdzOFf-vi/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch MESC">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Ashok Leyland @ Auto Expo</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · India</span>
+</div>
+<a class="watch" href="https://youtu.be/ERanxf-xjso" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Ashok Leyland @ Auto Expo">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Diplos @ Auto Expo</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1IqhNEmc5z5ZTU8Wzb2ICGJvB7EYFJ2hg/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Diplos @ Auto Expo">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Montra @ Auto Expo</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · India</span>
+</div>
+<a class="watch" href="https://youtu.be/wHApeIUy_jA" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Montra @ Auto Expo">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">YG-1 @ IMTEX 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1TUpAeyfZ4u83C94qhPS5zvEy4eijakqy/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch YG-1 @ IMTEX 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Axis Bank anamorphic content</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1jwal_omHLw4st70E1S6K3CBq2qoN5Cwe/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Axis Bank anamorphic content">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Waaree, International Solar Conference</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · USA</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1Wbr72SYJM6nMEkHdixDOeP2isB7MPO6V/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Waaree, International Solar Conference">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Alex Machine Tools @ IMTEX 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1MCT4NN9KbfnNI9fn9e5KEUlBeAGXS_Fn/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Alex Machine Tools @ IMTEX 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="exhibitions" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Tawuniya @ LEAP 2025</span>
+<span style="font-size: 13px; color: #A79FB8">Exhibition · Riyadh</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1kw5Rpj0cEBhxK8zohqFfIaEuodtJd1hi/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Tawuniya @ LEAP 2025">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">BLVD Sphere</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · Riyadh</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1R8gEjZxjZFeIL1NuDIM5za5JcCYL2m5W/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch BLVD Sphere">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">COP 6th Summit</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · Dubai</span>
+</div>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">WWE — BLVD World</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · Riyadh</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1Xzl5pu4c6jCJZi-8q2zSciCg6Nao0aWD/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch WWE — BLVD World">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">TVS Apache anamorphic</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · India</span>
+</div>
+<a class="watch" href="https://youtu.be/uiX2zSSCYEk" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch TVS Apache anamorphic">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">TVS Apache RR 310 anamorphic</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1CsTl8mPH-0wwuJMS7hE52--CCn2t3z3t/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch TVS Apache RR 310 anamorphic">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Foot Locker anamorphic</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1PB-ObZfWvFKzb6dv1aPCuoaiz4_AsgVP/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Foot Locker anamorphic">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">ADIPEC, Ministry of Petroleum &amp; Natural Gas</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · Abu Dhabi</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1XNJLlu4Nc4Fhjrn5gbtEzXqXzqW-OWeq/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch ADIPEC, Ministry of Petroleum &amp; Natural Gas">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">DHL — Beyond Boundaries</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · India</span>
+</div>
+<a class="watch" href="https://www.instagram.com/reel/DIJkqjBooGN/" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch DHL — Beyond Boundaries">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Punjab Kings anamorphic</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1QDdqlkdXfs7vqRhCkOHe-CKucw9dR7gv/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Punjab Kings anamorphic">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="experiential" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">IPL holographic installation</span>
+<span style="font-size: 13px; color: #A79FB8">Experiential · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/drive/folders/1gJGX90vY3Ptr-Qm0c_x_VnqQ24VRNIXE" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch IPL holographic installation">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="projection" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Hanuman Temple</span>
+<span style="font-size: 13px; color: #A79FB8">Projection mapping · India</span>
+</div>
+<a class="watch" href="https://drive.google.com/file/d/1-xMd5aWLPzGcXMAMepBZ7fvNC0Wc2XfJ/view" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Hanuman Temple">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="projection" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Wadhwa</span>
+<span style="font-size: 13px; color: #A79FB8">Projection mapping · India</span>
+</div>
+<a class="watch" href="https://youtu.be/80M-ZTdido4" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Wadhwa">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="projection" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Udaivilas</span>
+<span style="font-size: 13px; color: #A79FB8">Projection mapping · India</span>
+</div>
+<a class="watch" href="https://www.youtube.com/watch?v=WWnwDh5nPzE" target="_blank" rel="noopener" style="color: #C23BFF; font-size: 14px; flex-shrink: 0" aria-label="Watch Udaivilas">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>Watch</a>
+</div>
+<div class="row" data-cat="projection" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Ramayan</span>
+<span style="font-size: 13px; color: #A79FB8">Projection mapping · India</span>
+</div>
+</div>
+<div class="row" data-cat="projection" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 16px; font-weight: 500">Ayodhya Temple &amp; Gateway of India</span>
+<span style="font-size: 13px; color: #A79FB8">Projection mapping · India</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" style="position: relative; padding: 120px 0; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; bottom: -260px; left: 50%; transform: translateX(-50%); width: 1000px; height: 520px; border-radius: 50%; background: #5B3BFF; opacity: 0.25; filter: blur(150px); pointer-events: none"></div>
+<div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center">
+<img src="images/zds-logo.png" alt="" style="width: 120px; height: auto">
+<h2 class="disp sec-h" style="margin: 0; font-size: 52px; font-weight: 900; line-height: 1.1">Let's build your <span class="outline">next moment</span></h2>
+<p style="margin: 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #CFC7DD">A launch stage, an expo booth or a facade that needs to come alive. Tell us the date and the room, and we'll come back with a concept.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center">
+<a class="btn" href="https://wa.me/919977098856" target="_blank" rel="noopener" style="background: #C23BFF; color: #0B0712">Chat on WhatsApp</a>
+<a class="btn" href="https://zerodesignstudios.com/" target="_blank" rel="noopener" style="border: 1px solid #4A3D60; color: #F3EFFA">Visit our website</a>
+</div>
+<div style="display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; margin-top: 8px">
+<span class="disp" style="font-size: 20px; font-weight: 700">INDIA</span>
+<span class="disp" style="font-size: 20px; font-weight: 700">UAE</span>
+<span class="disp" style="font-size: 20px; font-weight: 700">SAUDI</span>
+</div>
+</div>
+</section>
+<footer style="border-top: 1px solid #1C1727; padding: 28px 0">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="https://zerodesignstudios.com/" target="_blank" rel="noopener" style="font-weight: 600; text-decoration: none">zerodesignstudios.com</a>
+<div style="display: flex; gap: 8px">
+<a href="https://x.com/zerodesignstudi" target="_blank" rel="noopener" aria-label="Zero Design Studio on X" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid #2A2238; border-radius: 50%; color: #DCD3EA">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"></path></svg></a>
+<a href="https://www.instagram.com/zerodesignstudio" target="_blank" rel="noopener" aria-label="Zero Design Studio on Instagram" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid #2A2238; border-radius: 50%; color: #DCD3EA">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg></a>
+<a href="https://www.youtube.com/@zerodesignstudio1" target="_blank" rel="noopener" aria-label="Zero Design Studio on YouTube" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid #2A2238; border-radius: 50%; color: #DCD3EA">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"></rect><path d="M10 9l5 3-5 3z" fill="currentColor"></path></svg></a>
+<a href="https://www.behance.net/siddhesdeshmuk6" target="_blank" rel="noopener" aria-label="Zero Design Studio on Behance" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid #2A2238; border-radius: 50%; color: #DCD3EA; font: 700 15px Barlow, sans-serif; text-decoration: none">Bē</a>
+<a href="https://wa.me/919977098856" target="_blank" rel="noopener" aria-label="Chat with Zero Design Studio on WhatsApp" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid #2A2238; border-radius: 50%; color: #DCD3EA">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8 19z"></path></svg></a>
+</div>
+<span style="font-size: 14px; color: #A79FB8">© 2026 Zero Design Studio</span>
+</div>
+</footer>
+</div>
+<script>
+// Project filter
+document.querySelectorAll('.tab').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var cat = btn.dataset.cat;
+    document.querySelectorAll('.tab').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+    document.querySelectorAll('.row').forEach(function (r) { r.hidden = !(cat === 'all' || r.dataset.cat === cat); });
+  });
+});
+</script>
+</body>
+</html>
