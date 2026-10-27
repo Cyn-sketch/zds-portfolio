@@ -48,7 +48,43 @@ a{color:#E3B6FF}a:hover{color:#ffffff}
 .anchor{scroll-margin-top:96px}
 .watch{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-weight:600;font-size:15px;text-decoration:none}
 @media (max-width:900px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.idx{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:minmax(0,1fr);gap:24px}}
-@media (max-width:640px){.wrap{padding:0 16px}.stats,.cards,.svc,.idx{grid-template-columns:minmax(0,1fr)}.navlinks .hide-sm{display:none}.hero-h{font-size:40px !important}.sec-h{font-size:30px !important}}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #4A3D60;border-radius:12px;color:#F3EFFA}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav .sheet{position:absolute;right:0;top:calc(100% + 12px);width:280px;max-width:calc(100vw - 32px);padding:8px;background:#110D1B;border:1px solid #3A2F4E;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;z-index:30}
+.mnav .sheet a{display:flex;align-items:center;min-height:48px;padding:0 14px;border-radius:10px;color:#F3EFFA;text-decoration:none;font-weight:500;font-size:16px}
+.mnav .sheet a:hover{background:#2A1D40}
+.more{display:none}
+.more[hidden]{display:none !important}
+@media (max-width:640px){
+.wrap{padding:0 16px}
+.stats,.cards,.svc,.idx{grid-template-columns:minmax(0,1fr)}
+.navlinks .hide-sm{display:none}
+.navlinks{gap:10px}
+.mnav{display:block}
+.nav-cta{padding:0 16px !important;font-size:14px !important}
+.hero-h{font-size:40px !important}
+.sec-h{font-size:28px !important}
+.zds section{padding-bottom:56px !important}
+.zds section.ptop{padding-top:56px !important}
+.zds section.hero{padding-top:40px !important}
+.eyebrow{letter-spacing:.14em !important;font-size:12px !important}
+.lede{font-size:18px !important}
+.stat{display:flex;align-items:center;gap:16px;padding:18px 20px !important}
+.stat .disp{font-size:34px !important;min-width:76px;flex-shrink:0}
+.stat .disp + div{margin-top:0 !important;font-size:15px !important}
+.reel{min-height:170px !important;gap:24px !important;padding:24px !important}
+.svc-item{padding:14px 18px !important;gap:2px !important}
+.svc-item p{display:none !important}
+.svc-filler{display:none !important}
+.swipe{display:grid;grid-auto-flow:column;grid-auto-columns:84%;grid-template-columns:none !important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px;gap:12px !important;margin:0 -16px;padding:0 16px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.swipe::-webkit-scrollbar{display:none}
+.swipe > *{scroll-snap-align:start}
+.group{padding-bottom:40px !important}
+.idx.collapsed .row:nth-child(n+13){display:none !important}
+.more{display:flex;justify-content:center}
+.zds section.contact{padding:72px 0 !important}
+}
 .tab{min-height:44px;padding:0 18px;border-radius:999px;font:600 15px 'Barlow',sans-serif;cursor:pointer;background:transparent;color:#F3EFFA;border:1px solid #4A3D60}
 .tab[aria-pressed="true"]{background:#C23BFF;color:#0B0712;border-color:#C23BFF}
 .row[hidden]{display:none !important}
@@ -87,16 +123,26 @@ html{scroll-behavior:smooth}
 </div>
 </div>
 <a class="hide-sm" href="#all" style="color: #D9D2E6; text-decoration: none; font-weight: 500">All projects</a>
-<a class="btn" href="#contact" style="background: #C23BFF; color: #0B0712; min-height: 44px; padding: 0 20px; font-size: 15px">Start a project</a>
+<a class="btn nav-cta" href="#contact" style="background: #C23BFF; color: #0B0712; min-height: 44px; padding: 0 20px; font-size: 15px">Start a project</a>
+<details class="mnav">
+<summary aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
+<div class="sheet">
+<a href="#reels">Showreels</a>
+<a href="#work">Work</a>
+<a href="#services">Services</a>
+<a href="#all">All projects</a>
+<a href="https://wa.me/919977098856" target="_blank" rel="noopener">Chat on WhatsApp</a>
+</div>
+</details>
 </nav>
 </div>
 </header>
-<section id="top" style="position: relative; padding: 96px 0 72px">
+<section id="top" class="hero" style="position: relative; padding: 96px 0 72px">
 <div aria-hidden="true" style="position: absolute; top: -160px; left: 50%; transform: translateX(-50%); width: 900px; height: 520px; border-radius: 50%; background: #C23BFF; opacity: 0.22; filter: blur(140px); pointer-events: none"></div>
 <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 28px; align-items: center; text-align: center">
-<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #C9B8E6">Multimedia portfolio · India · UAE · Saudi</p>
+<p class="eyebrow" style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #C9B8E6">Multimedia portfolio · India · UAE · Saudi</p>
 <h1 class="disp hero-h" style="margin: 0; font-size: 76px; line-height: 1.05; font-weight: 900">ENGAGE. <span class="outline">ENTERTAIN.</span> EVOLVE.</h1>
-<p style="margin: 0; max-width: 680px; font-size: 21px; line-height: 1.5; color: #CFC7DD">A multidisciplinary studio creating content for LED stages, exhibition booths, anamorphic screens and projection mapping, combining CGI with AI-driven storytelling.</p>
+<p class="lede" style="margin: 0; max-width: 680px; font-size: 21px; line-height: 1.5; color: #CFC7DD">A multidisciplinary studio creating content for LED stages, exhibition booths, anamorphic screens and projection mapping, combining CGI with AI-driven storytelling.</p>
 <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center">
 <a class="btn" href="#work" style="background: #C23BFF; color: #0B0712">See the work
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
@@ -111,15 +157,15 @@ html{scroll-behavior:smooth}
 <section style="padding: 0 0 72px">
 <div class="wrap">
 <div class="stats">
-<div style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
+<div class="stat" style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
 <div class="disp" style="font-size: 44px; font-weight: 700; color: #C23BFF">70+</div>
 <div style="margin-top: 6px; font-size: 17px; color: #CFC7DD">projects in this portfolio, from brand stages to temple facades</div>
 </div>
-<div style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
+<div class="stat" style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
 <div class="disp" style="font-size: 44px; font-weight: 700; color: #C23BFF">3</div>
 <div style="margin-top: 6px; font-size: 17px; color: #CFC7DD">home markets — India, UAE and Saudi Arabia — with work delivered in the USA, Nepal and Malaysia</div>
 </div>
-<div style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
+<div class="stat" style="padding: 28px; border: 1px solid #2A2238; border-radius: 14px; background: #0E0B16">
 <div class="disp" style="font-size: 44px; font-weight: 700; color: #C23BFF">13</div>
 <div style="margin-top: 6px; font-size: 17px; color: #CFC7DD">services under one roof, from concept and CGI to projection mapping and show production</div>
 </div>
@@ -133,14 +179,14 @@ html{scroll-behavior:smooth}
 <h2 class="disp sec-h" style="margin: 0; font-size: 40px; font-weight: 700">Watch the showreels</h2>
 </div>
 <div class="cards">
-<a href="https://youtu.be/wWdHbHcyybs" target="_blank" rel="noopener" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 240px; padding: 32px; border-radius: 16px; text-decoration: none; color: #F3EFFA; background: radial-gradient(120% 140% at 0% 0%, #3A1A5C 0%, #120E1C 60%); border: 1px solid #4A3D60">
+<a class="reel" href="https://youtu.be/wWdHbHcyybs" target="_blank" rel="noopener" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 240px; padding: 32px; border-radius: 16px; text-decoration: none; color: #F3EFFA; background: radial-gradient(120% 140% at 0% 0%, #3A1A5C 0%, #120E1C 60%); border: 1px solid #4A3D60">
 <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <span class="disp" style="font-size: 24px; font-weight: 700">Zero Design Studio Showreel</span>
 <span style="font-size: 16px; color: #CFC7DD">Our best stage, exhibition and experiential work in one cut</span>
 </div>
 </a>
-<a href="https://youtu.be/oAEomBEkBLg" target="_blank" rel="noopener" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 240px; padding: 32px; border-radius: 16px; text-decoration: none; color: #F3EFFA; background: radial-gradient(120% 140% at 100% 0%, #1E1F66 0%, #120E1C 60%); border: 1px solid #4A3D60">
+<a class="reel" href="https://youtu.be/oAEomBEkBLg" target="_blank" rel="noopener" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 240px; padding: 32px; border-radius: 16px; text-decoration: none; color: #F3EFFA; background: radial-gradient(120% 140% at 100% 0%, #1E1F66 0%, #120E1C 60%); border: 1px solid #4A3D60">
 <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"></path></svg>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <span class="disp" style="font-size: 24px; font-weight: 700">ZDS AI Showreel</span>
@@ -200,7 +246,7 @@ html{scroll-behavior:smooth}
 </div>
 </div>
 </section>
-<section style="padding: 104px 0">
+<section class="ptop" style="padding: 104px 0">
 <div class="wrap two">
 <div style="display: flex; flex-direction: column; gap: 20px">
 <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #C23BFF">Vision &amp; mission</p>
@@ -332,9 +378,9 @@ html{scroll-behavior:smooth}
 <a href="#work-experiential" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; text-decoration: none; color: #C23BFF">See related work →</a>
 </div>
 <div style="padding: 26px 24px; background: #0B0912; display: flex; align-items: center">
-<a href="#contact" style="font-weight: 600; text-decoration: none; color: #C23BFF">Not sure what you need? Ask us →</a>
+<a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none; color: #C23BFF">Not sure what you need? Ask us →</a>
 </div>
-<div style="padding: 26px 24px; background: #0B0912"></div>
+<div class="svc-filler" style="padding: 26px 24px; background: #0B0912"></div>
 </div>
 </div>
 </section>
@@ -344,12 +390,12 @@ html{scroll-behavior:smooth}
 <h2 class="disp sec-h" style="margin: 0; font-size: 40px; font-weight: 700">Selected work</h2>
 <p style="margin: 0; max-width: 640px; font-size: 18px; color: #CFC7DD">Tap any project to watch the walkthrough.</p>
 </div>
-<div id="work-events" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div id="work-events" class="wrap anchor group" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
 <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
 <h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Stage &amp; Screen Content</h3>
 <span style="font-size: 16px; color: #A79FB8">Stage visuals for brand shows, launches and concerts</span>
 </div>
-<div class="cards">
+<div class="cards swipe">
 <article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
 <div style="overflow: hidden"><img src="images/sbi-life-25-years.jpg" alt="SBI Life — 25 Years — visuals by Zero Design Studio" loading="lazy"></div>
 <div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
@@ -502,12 +548,12 @@ html{scroll-behavior:smooth}
 </article>
 </div>
 </div>
-<div id="work-exhibitions" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div id="work-exhibitions" class="wrap anchor group" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
 <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
 <h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Exhibitions</h3>
 <span style="font-size: 16px; color: #A79FB8">Booth content for expos and trade shows</span>
 </div>
-<div class="cards">
+<div class="cards swipe">
 <article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
 <div style="overflow: hidden"><img src="images/opentext-leap.jpg" alt="OpenText @ LEAP 2025 — visuals by Zero Design Studio" loading="lazy"></div>
 <div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
@@ -554,12 +600,12 @@ html{scroll-behavior:smooth}
 </article>
 </div>
 </div>
-<div id="work-experiential" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div id="work-experiential" class="wrap anchor group" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
 <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
 <h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Multimedia Shows &amp; Experiential</h3>
 <span style="font-size: 16px; color: #A79FB8">Anamorphic, holographic and immersive installs</span>
 </div>
-<div class="cards">
+<div class="cards swipe">
 <article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
 <div style="overflow: hidden"><img src="images/blvd-sphere.jpg" alt="BLVD Sphere — visuals by Zero Design Studio" loading="lazy"></div>
 <div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
@@ -606,12 +652,12 @@ html{scroll-behavior:smooth}
 </article>
 </div>
 </div>
-<div id="work-projection" class="wrap anchor" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
+<div id="work-projection" class="wrap anchor group" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 72px">
 <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #2A2238; padding-bottom: 14px">
 <h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 700">Projection Mapping</h3>
 <span style="font-size: 16px; color: #A79FB8">Temples, monuments and building facades</span>
 </div>
-<div class="cards">
+<div class="cards swipe">
 <article class="card" style="border: 1px solid #2A2238; border-radius: 14px; overflow: hidden; background: #0E0B16">
 <div style="overflow: hidden"><img src="images/hanuman-temple-projection.jpg" alt="Hanuman Temple — visuals by Zero Design Studio" loading="lazy"></div>
 <div style="padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
@@ -648,7 +694,7 @@ html{scroll-behavior:smooth}
 <button type="button" class="tab" data-cat="experiential" aria-pressed="false">Experiential <span style="opacity: 0.7">10</span></button>
 <button type="button" class="tab" data-cat="projection" aria-pressed="false">Projection mapping <span style="opacity: 0.7">5</span></button>
 </div>
-<div class="idx">
+<div class="idx collapsed">
 <div class="row" data-cat="events" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; border-bottom: 1px solid #221C2E">
 <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
 <span style="font-size: 16px; font-weight: 500">SBI Life — 25 Years 2026</span>
@@ -1186,9 +1232,10 @@ html{scroll-behavior:smooth}
 </div>
 </div>
 </div>
+<button type="button" class="btn more" style="align-self: center; background: transparent; border: 1px solid #4A3D60; color: #F3EFFA; cursor: pointer; font-family: inherit">Show all 72 projects</button>
 </div>
 </section>
-<section id="contact" style="position: relative; padding: 120px 0; overflow: hidden">
+<section id="contact" class="contact" style="position: relative; padding: 120px 0; overflow: hidden">
 <div aria-hidden="true" style="position: absolute; bottom: -260px; left: 50%; transform: translateX(-50%); width: 1000px; height: 520px; border-radius: 50%; background: #5B3BFF; opacity: 0.25; filter: blur(150px); pointer-events: none"></div>
 <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center">
 <img src="images/zds-wordmark.png" alt="Zero Design Studio" style="width: 220px; height: auto">
@@ -1207,7 +1254,7 @@ html{scroll-behavior:smooth}
 </section>
 <footer style="border-top: 1px solid #1C1727; padding: 28px 0">
 <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
-<a href="https://zerodesignstudios.com/" target="_blank" rel="noopener" style="font-weight: 600; text-decoration: none">zerodesignstudios.com</a>
+<a href="https://zerodesignstudios.com/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none">zerodesignstudios.com</a>
 <div style="display: flex; gap: 8px">
 <a href="https://x.com/zerodesignstudi" target="_blank" rel="noopener" aria-label="Zero Design Studio on X" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid #2A2238; border-radius: 50%; color: #DCD3EA">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"></path></svg></a>
@@ -1224,13 +1271,23 @@ html{scroll-behavior:smooth}
 </footer>
 </div>
 <script>
-// Project filter
+// Project filter + "Show all" (phones show the first 12 projects)
+var idx = document.querySelector('.idx'), more = document.querySelector('.more');
+var total = document.querySelectorAll('.row').length;
+function label() { if (more) more.textContent = idx.classList.contains('collapsed') ? 'Show all ' + total + ' projects' : 'Show fewer'; }
 document.querySelectorAll('.tab').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var cat = btn.dataset.cat;
     document.querySelectorAll('.tab').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
     document.querySelectorAll('.row').forEach(function (r) { r.hidden = !(cat === 'all' || r.dataset.cat === cat); });
+    if (cat === 'all') { idx.classList.add('collapsed'); if (more) more.hidden = false; label(); }
+    else { idx.classList.remove('collapsed'); if (more) more.hidden = true; }
   });
+});
+if (more) more.addEventListener('click', function () { idx.classList.toggle('collapsed'); label(); });
+// Phone menu: close after choosing a section
+document.querySelectorAll('.mnav .sheet a').forEach(function (a) {
+  a.addEventListener('click', function () { a.closest('details').removeAttribute('open'); });
 });
 </script>
 </body>
